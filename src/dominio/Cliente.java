@@ -1,0 +1,111 @@
+package dominio;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Cliente {
+
+    private int ID;
+    private String nombre;
+    private String apellidos;
+    private String nif;
+    private String direccion;
+    private String localidad;
+    private String provincia;
+    private String telefono;
+    private String email;
+    private List<Facturas> facturas;
+
+    public Cliente(int ID, String nombre, String apellidos, String nif, String direccion, String localidad, String provincia, String telefono, String email) {
+        this.ID = ID;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.nif = nif;
+        this.direccion = direccion;
+        this.localidad = localidad;
+        this.provincia = provincia;
+        this.telefono = telefono;
+        this.email = email;
+        this.facturas = new ArrayList<Facturas>();
+    }
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public String getNif() {
+        return nif;
+    }
+
+    public void setNif(String nif) {
+        this.nif = nif;
+    }
+
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
+    public String getLocalidad() {
+        return localidad;
+    }
+
+    public void setLocalidad(String localidad) {
+        this.localidad = localidad;
+    }
+
+    public String getProvincia() {
+        return provincia;
+    }
+
+    public void setProvincia(String provincia) {
+        this.provincia = provincia;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public List<Facturas> getFacturas() {
+        return Facturas;
+    }
+
+    public void setFacturas(List<Facturas> facturas) {
+        Facturas = facturas;
+    }
+}
