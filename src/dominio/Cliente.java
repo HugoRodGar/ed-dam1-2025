@@ -102,10 +102,10 @@ public class Cliente {
     }
 
     public List<Facturas> getFacturas() {
-        return Facturas;
+        return facturas;
     }
 
     public void setFacturas(List<Facturas> facturas) {
-        Facturas = facturas;
+        facturas = facturas;
     }
 }
